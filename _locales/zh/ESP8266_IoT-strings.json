@@ -3,6 +3,7 @@
   "ESP8266_IoT.State.Success|block": "成功",
   "ESP8266_IoT.connectKidsiot|block": "连接 KidsIot 平台使用 userToken: %userToken Topic: %topic",
   "ESP8266_IoT.connectThingSpeak|block": "连接 Thingspeak 平台",
+  "ESP8266_IoT.connectCGAGInc|block": "连接 CGAGInc 平台",
   "ESP8266_IoT.connectWifi|block": "连接WIFI无线网络 WIFI名称 = %ssid|WIFI密码 = %pw",
   "ESP8266_IoT.disconnectKidsiot|block": "断开与 KidsIot 平台的连接",
   "ESP8266_IoT.initWIFI|block": "设置 ESP8266 模块|RX %tx|TX %rx|波特率 %baudrate",
@@ -19,5 +20,7 @@
   "ESP8266_IoT|block": "IoT物联网",
   "{id:category}ESP8266_IoT": "IoT物联网",
   "{id:subcategory}KidsIot": "KidsIot",
-  "{id:subcategory}ThingSpeak": "ThingSpeak"
+  "{id:subcategory}ThingSpeak": "ThingSpeak",
+  "{id:subcategory}CGAGInc": "CGAGInc"
+  
 }

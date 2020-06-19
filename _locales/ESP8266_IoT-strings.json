@@ -19,6 +19,6 @@
   "ESP8266_IoT|block": "ESP8266_IoT",
   "{id:category}ESP8266_IoT": "ESP8266_IoT",
   "{id:subcategory}KidsIot": "KidsIot",
-  "{id:subcategory}ThingSpeak": "ThingSpeak"
+  "{id:subcategory}ThingSpeak": "ThingSpeak",
   "{id:subcategory}CGAGInc": "CGAGInc"
 }

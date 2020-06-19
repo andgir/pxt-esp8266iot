@@ -2,6 +2,7 @@
   "ESP8266_IoT": "Custom blocks",
   "ESP8266_IoT.connectKidsiot": "Connect to kitsiot",
   "ESP8266_IoT.connectThingSpeak": "Connect to ThingSpeak",
+  "ESP8266_IoT.connectCGAGInc": "Connect to CGAGInc",
   "ESP8266_IoT.connectWifi": "connect to Wifi router",
   "ESP8266_IoT.disconnectKidsiot": "disconnect from kitsiot",
   "ESP8266_IoT.initWIFI": "Initialize ESP8266 module",

@@ -87,21 +87,6 @@ namespace ESP8266_IoT {
         wifi_connected = waitResponse()
         basic.pause(100)
     }
-    /**
-    * Connect to ThingSpeak
-    */
-    //% block="connect thingspeak"
-    //% write_api_key.defl=your_write_api_key
-    //% subcategory="ThingSpeak"
-    export function connectThingSpeak() {
-        if (wifi_connected && kitsiot_connected == false) {
-            thingspeak_connected = false
-            let text = "AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80"
-            sendAT(text, 0) // connect to website server
-            thingspeak_connected = waitResponse()
-            basic.pause(100)
-        }
-    }
     
     /**
     * Connect to CGAGInc
@@ -118,6 +103,23 @@ namespace ESP8266_IoT {
         }
     }
 
+    
+    /**
+    * Connect to ThingSpeak
+    */
+    //% block="connect thingspeak"
+    //% write_api_key.defl=your_write_api_key
+    //% subcategory="ThingSpeak"
+    export function connectThingSpeak() {
+        if (wifi_connected && kitsiot_connected == false) {
+            thingspeak_connected = false
+            let text = "AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80"
+            sendAT(text, 0) // connect to website server
+            thingspeak_connected = waitResponse()
+            basic.pause(100)
+        }
+    }
+    
     /**
     * Connect to ThingSpeak and set data. 
     */

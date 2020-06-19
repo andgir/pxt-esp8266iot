@@ -6,6 +6,7 @@ namespace ESP8266_IoT {
 
     let wifi_connected: boolean = false
     let thingspeak_connected: boolean = false
+    let cgaginc_connected: boolean = false
     let kitsiot_connected: boolean = false
     let last_upload_successful: boolean = false
     let userToken_def: string = ""
@@ -101,6 +102,22 @@ namespace ESP8266_IoT {
             basic.pause(100)
         }
     }
+    
+    /**
+    * Connect to CGAGInc
+    */
+    //% block="connect cgaginc"
+    //% subcategory="CGAGInc"
+    export function connectCGAGInc() {
+        if (wifi_connected && kitsiot_connected == false) {
+            cgaginc_connected = false
+            let text = "AT+CIPSTART=\"TCP\",\"cgaginc.com\",80"
+            sendAT(text, 0) // connect to website server
+            cgaginc_connected = waitResponse()
+            basic.pause(100)
+        }
+    }
+
     /**
     * Connect to ThingSpeak and set data. 
     */
